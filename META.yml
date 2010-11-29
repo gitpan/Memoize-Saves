@@ -13,11 +13,13 @@ meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
   version: 1.4
 name: Memoize-Saves
+requires:
+  Memoize: 1.02
 resources:
   bugtracker: http://rt.cpan.org/Public/Dist/Display.html?Name=Memoize-Saves
   homepage: http://search.cpan.org/dist/Memoize-Saves
   repository: git://github.com/rafl/Memoize-Saves.git
-version: 0.66
+version: 0.67
 x_Dist_Zilla:
   plugins:
     -
@@ -119,6 +121,14 @@ x_Dist_Zilla:
     -
       class: Dist::Zilla::Plugin::AutoPrereqs
       name: '@FLORA/AutoPrereqs'
+      version: 4.102345
+    -
+      class: Dist::Zilla::Plugin::Prereqs
+      config:
+        Dist::Zilla::Plugin::Prereqs:
+          phase: runtime
+          type: requires
+      name: Prereqs
       version: 4.102345
     -
       class: Dist::Zilla::Plugin::FinderCode

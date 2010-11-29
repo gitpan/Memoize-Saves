@@ -21,8 +21,10 @@ my %WriteMakefileArgs = (
   'EXE_FILES' => [],
   'LICENSE' => 'perl',
   'NAME' => 'Memoize::Saves',
-  'PREREQ_PM' => {},
-  'VERSION' => '0.66',
+  'PREREQ_PM' => {
+    'Memoize' => '1.02'
+  },
+  'VERSION' => '0.67',
   'test' => {
     'TESTS' => 't/*.t'
   }

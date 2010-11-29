@@ -3,7 +3,7 @@ BEGIN {
   $Memoize::Saves::AUTHORITY = 'cpan:FLORA';
 }
 BEGIN {
-  $Memoize::Saves::VERSION = '0.66';
+  $Memoize::Saves::VERSION = '0.67';
 }
 # ABSTRACT: Plug-in module to specify which return values should be memoized
 
